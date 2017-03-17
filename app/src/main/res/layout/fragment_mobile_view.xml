@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/activity_descreption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.ahmed.movie_app.DescreptionActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/titleView"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_light"
+            android:layout_toEndOf="@+id/descretionView"
+            android:textSize="40dp"
+
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/img_container"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:layout_below="@+id/titleView"
+                android:layout_alignParentStart="true" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="220dp"
+                android:layout_marginStart="23dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/favoriteImage"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yearView"
+
+                    android:layout_below="@+id/titleView"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:layout_marginTop="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/durationView"
+                    android:layout_below="@+id/yearView"
+                    android:layout_alignStart="@+id/yearView"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rateView"
+                    android:layout_below="@+id/durationView"
+                    android:layout_alignStart="@+id/durationView"
+                    android:layout_marginTop="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:id="@+id/descretionView"
+            android:layout_marginTop="29dp"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:text="Traliers:"
+            android:textSize="25dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView2"
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:id="@+id/listView"
+            />
+        <TextView
+            android:text="Reviews:"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/reviews"
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/reviews"
+            android:id="@+id/reviewsList"
+            />
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
